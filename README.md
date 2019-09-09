@@ -12,7 +12,7 @@ to final analsys.
 
 ## A reproducible set of workflow instructions for comparative analysis using Chignolin
 ### `workflows`
-The name of folders in the `workflows` directory indicate the layout of MD simulations in the workflow.
+The name of folders in the `workflows` directory indicate the layout of MD simulations in the workflow.\
 `< system name >-< phase # >-< features >-< workflow layout >`
 
 ##### Phases
