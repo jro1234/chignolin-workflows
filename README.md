@@ -55,10 +55,13 @@ to distribute restart states along the slowest process(es) instead of in the lea
 ##### Features
 Features are (a reduced set of) aspects/measurements from the raw data that we actually model. 
 It could be the full raw dataset, which would take a prohibitively long time. In our cases we use
-either the inverse of all inter-residue **C$alpha$**-**C$alpha$** distances, or these distances
-along with further conformational information from (backbone) Phi, Psi, and (sidechain) Chi1 torsion angles. 
+either the inverse of all inter-residue **Cα**-**Cα** distances, or these distances
+along with further conformational information from (backbone) φ, ψ, and (sidechain) χ1 torsion angles. 
 
- - `chignolin-p1-1x1x10us` A single 10$mu$s long trajectory of the chignolin protein
- - `chignolin-p1-20x16x10ns` 20 rounds of 16 10ns trajectories
- - `chignolin-p1-10x16x25ns` 10 rounds of 16 25ns trajectories
- - `chignolin-p1-10x8x50ns` 
+##### Workflow Layouts
+ - `chignolin-p1-1x1x10us`   A single 10μs long trajectory of the chignolin protein
+ - `chignolin-p1-20x16x10ns` 4μs of data from 25 rounds of 16 10ns trajectories
+ - `chignolin-p1-10x16x25ns` 4μs of data from 10 rounds of 16 25ns trajectories
+ - `chignolin-p1-10x8x50ns`  4μs of data from 10 rounds of 8  50ns trajectories
+
+
