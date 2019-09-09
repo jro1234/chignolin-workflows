@@ -53,11 +53,12 @@ An identical analysis is performed up to the estimation of an MSM, however in th
 to distribute restart states along the slowest process(es) instead of in the least visited states.
 
 ##### Features
-Features are (a reduced set of) aspects of the raw data that we model. It could be the actual
-raw data, which would take a prohibitively long time, or in our cases either the inverse of
-all **C$\alpha$** distances
+Features are (a reduced set of) aspects/measurements from the raw data that we actually model. 
+It could be the full raw dataset, which would take a prohibitively long time. In our cases we use
+either the inverse of all inter-residue **C$\alpha$**-**C$\alpha$** distances, or these distances
+along with further conformational information from (backbone) Phi, Psi, and (sidechain) Chi1 torsion angles. 
 
- - `chignolin-p1-1x1x10us` A single long trajectory of the chignolin protein
+ - `chignolin-p1-1x1x10us` A single 10$\mu$s long trajectory of the chignolin protein
  - `chignolin-p1-20x16x10ns` 20 rounds of 16 10ns trajectories
  - `chignolin-p1-10x16x25ns` 10 rounds of 16 25ns trajectories
- - `chignolin-p1-10x16x50ns`
+ - `chignolin-p1-10x8x50ns` 
