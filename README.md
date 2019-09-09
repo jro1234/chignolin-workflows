@@ -24,10 +24,12 @@ The adaptive sampling algorithm "explore macrostates" is used from the AdaptiveM
 where a large number of macrostates (~25) are estimated from the existing data via this analysis
 pipeline implemented with calls to PyEMMA:
 
-data --featurize--> feature trajectories --TICA--> 
-reduced dims --cluster(k-means)--> 
-microstates --estimate transitions-->
-MSM --cluster(spectral, PCCA+)--> macrostates
+**data** --featurize-->\
+**feature** trajectories --TICA-->\
+**reduced dims** --cluster(k-means)-->\
+**microstates** --estimate transitions-->\
+**MSM** --cluster(spectral, PCCA+)-->\
+**macrostates**
 
 Inverse count sampling is used to select macrostates for restarting by weighting each macrostate
 inverse to its count of existing frames, so that less-visited macrostates are more likely to be
